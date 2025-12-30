@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 8 131 149;
+    --color-ocean: 10 77 104;
+    --color-coral: 255 107 53;
+    --color-navy: 11 36 71;
+  }
+
+  * {
+    @apply border-black;
+  }
+
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+
+  /* Neobrutalist Button Styles */
+  .btn-brutal {
+    @apply px-6 py-3 font-bold border-2 border-black rounded-lg transition-all duration-200;
+    @apply shadow-brutal hover:shadow-brutal-sm active:shadow-none;
+    @apply hover:translate-x-[2px] hover:translate-y-[2px];
+    @apply active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .btn-primary {
+    @apply btn-brutal bg-primary-500 text-white hover:bg-primary-600;
+  }
+
+  .btn-coral {
+    @apply btn-brutal bg-coral-500 text-white hover:bg-coral-600;
+  }
+
+  .btn-outline {
+    @apply btn-brutal bg-white text-black hover:bg-gray-50;
+  }
+
+  /* Neobrutalist Card Styles */
+  .card-brutal {
+    @apply border-2 border-black rounded-xl shadow-brutal;
+    @apply transition-all duration-200;
+    @apply hover:shadow-brutal-lg hover:-translate-y-1;
+  }
+
+  /* Handwritten Text Highlight */
+  .text-highlight {
+    @apply relative inline-block;
+  }
+
+  .text-highlight::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-3 bg-coral-200 -z-10;
+    transform: skewY(-1deg);
+  }
+
+  /* Grid Paper Background */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(8, 131, 149, 0.15) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(8, 131, 149, 0.15) 2px, transparent 2px);
+    background-size: 30px 30px;
+    position: relative;
+  }
+
+  .grid-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(8, 131, 149, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(8, 131, 149, 0.08) 1px, transparent 1px);
+    background-size: 10px 10px;
+    pointer-events: none;
+  }
+
+  /* Dot Grid Background */
+  .dot-bg {
+    background-image: radial-gradient(circle, rgba(8, 131, 149, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@layer utilities {
+
+  /* Custom Animations */
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-medium {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  /* Handwritten Font Utility */
+  .font-sketch {
+    @apply font-handwritten;
+  }
+
+  /* Animated Underline */
+  .underline-animated {
+    @apply relative inline-block;
+  }
+
+  .underline-animated::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300;
+  }
+
+  .underline-animated:hover::after {
+    @apply w-full;
+  }
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-600;
+}
