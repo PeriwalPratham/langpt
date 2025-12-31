@@ -1,16 +1,57 @@
-# React + Vite
+# LangGPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LangGPT is an AI-powered language learning platform designed to help you master new languages through interactive exercises and personalized feedback.
 
-Currently, two official plugins are available:
+## 🚧 Work in Progress 🚧
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**This project is currently under active development. Features may be added, removed, or changed without notice. We appreciate your patience and welcome your feedback!**
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **AI-Powered Speaking Practice:** Get instant feedback on your pronunciation and fluency.
+* **Interactive Writing Exercises:** Improve your writing skills with AI-assisted corrections and suggestions.
+* **Personalized Learning Paths:** The platform adapts to your learning style and goals.
+* **Support for Multiple Languages:** Master Spanish, French, Mandarin, and Hindi.
 
-## Expanding the ESLint configuration
+## 💻 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** [React](https://reactjs.org/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/)
+* **Linting:** [ESLint](https://eslint.org/)
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/) (v14 or later)
+* [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repo**
+   ```sh
+   git clone [INSERT GITHUB REPO URL HERE]
+   ```
+2. **Install NPM packages**
+   ```sh
+   npm install
+   ```
+
+### Usage
+
+1. **Start the development server**
+   ```sh
+   npm run dev
+   ```
+2. **Open your browser** to `http://localhost:5173` (or the address shown in your terminal).
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. **Fork the Project**
+2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
